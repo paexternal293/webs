@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+      font-weight: 500;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 15px;
+      margin-bottom: 5px;
+      color: #555;
+      font-weight: 500;
+    }
+    input,
+    select,
+    textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #6B73FF;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #6B73FF;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #000DFF;
+    }
+    .note {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #777;
+      text-align: center;
+    }
+    .note a {
+      color: #6B73FF;
+      text-decoration: none;
+    }
+    .note a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="behavior">Behavior History</label>
+      <textarea id="behavior" name="behavior" placeholder="Describe behavior history" rows="4" required></textarea>
+
+      <label for="country">Country</label>
+      <select id="country" name="country" required>
+        <option value="">Select your country</option>
+        <option value="US">United States</option>
+        <option value="CA">Canada</option>
+        <option value="GB">United Kingdom</option>
+        <option value="AU">Australia</option>
+        <option value="IN">India</option>
+        <option value="ET">Ethiopia</option>
+        
+        <!-- Add more countries as needed -->
+      </select>
+
+      <label for="accountEmail">Account Email</label>
+      <input type="email" id="accountEmail" name="accountEmail" placeholder="Enter account email" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="lastConversation">Last Conversation</label>
+      <textarea id="lastConversation" name="lastConversation" placeholder="Enter last conversation details" rows="4"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p class="note">After submission, an email will be sent to <a href="mailto:paexternal293@oaisb.info">paexternal293@oaisb.info</a>.</p>
+  </div>
+</body>
+</html>
